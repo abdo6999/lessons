@@ -48,8 +48,8 @@
 # - Smaller data types use less memory, while larger data types consume more.
 
 # Constants for data sizes
-BIT = 1               # The smallest unit of data, representing a binary value of 0 or 1.
-BYTE = 8 * BIT        # Consists of 8 bits, commonly used to represent a single character (e.g., ASCII character).
+BIT = 1   #  value of 0 or 1.
+BYTE = 8 * BIT        # ex: a = "01100001"
 KILOBYTE = 1024 * BYTE   # Equals 1,024 bytes (2^10), often used to measure the size of small text files or images.
 MEGABYTE = 1024 * KILOBYTE   # Equals 1,024 kilobytes (2^20), used for larger files, such as high-resolution images or short videos.
 GIGABYTE = 1024 * MEGABYTE   # Equals 1,024 megabytes (2^30), frequently used to measure the size of files, programs, and data storage.
