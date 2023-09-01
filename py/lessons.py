@@ -201,8 +201,129 @@ area = length * width
 
 
 
-# Lesson 3: Basic Input and Output
-# - Learn how to take user input and display output using print().
+# Lesson 3: Input and Output
+
+# Input
+# - Taking user input using the input() function.
+# - The input() function reads a line of text from the user and returns it as a string.
+
+user_input = input("Enter your name: ")  # Prompt the user for their name
+print("Hello, " + user_input + "!")     # Display a greeting with the user's name
+
+# Output
+# - Displaying information to the user using the print() function.
+# - The print() function is used to output text or variables to the console.
+
+print("This is a simple Python program.")  # Display a message to the user
+result = 10 + 5
+print("The result of 10 + 5 is:", result)   # Display the result of an arithmetic operation
+
+# Combining Input and Output
+# - Taking user input and using it in the program's output.
+
+age = input("Enter your age: ")  # Prompt the user for their age
+age = int(age)  # Convert the user's input to an integer
+future_age = age + 10
+print("In 10 years, you will be", future_age, "years old.")
+
+# Summary
+# - Input is obtained using the input() function.
+# - Output is displayed using the print() function.
+# - You can combine input and output to create interactive programs.
+
+# Now, you have a basic understanding of how to get input from users and display output in Python.
+# Lesson: Printing and Taking Input in Python
+
+# Printing in Python with `print()`
+
+# Basic Usage:
+print("Hello, World!")  # Outputs the text "Hello, World!"
+
+# Separating Items:
+print(1, 2, 3)  # Outputs: 1 2 3
+
+# Customize the separator using the `sep` parameter:
+print(1, 2, 3, sep='-')  # Outputs: 1-2-3
+
+# Controlling the End Character:
+# The `end` parameter specifies what to print at the end (default is newline '\n'):
+print("Hello", end=' ')
+print("World!")  # Outputs: Hello World!
+
+# Formatting Output:
+
+name = "Alice"
+age = 30
+
+# Using placeholders with `.format()`:
+print("My name is {} and I am {} years old.".format(name, age))
+
+# Old Style Formatting (%):
+print("My name is %s and I am %d years old." % (name, age))
+
+# F-strings (Python 3.6+):
+print(f"My name is {name} and I am {age} years old.")
+
+# Taking Input with `input()`
+
+# The `input()` function allows getting user input:
+name = input("Enter your name: ")
+print("Hello, " + name + "!")
+
+# By default, `input()` treats input as a string.
+# If you need a numeric value, convert it using `int()` or `float()`:
+age = int(input("Enter your age: "))
+
+# Remember to handle potential errors when converting input to numbers.
+# Python's simplicity and flexibility make it an excellent choice for both beginners and experienced developers.
+
+
+# Coding Challenge: User Info
+
+# Lesson 1: Introduction to Python
+# Create a program that welcomes the user and explains what this program does.
+
+print("Welcome to the User Info program!")
+print("This program will collect some information about you.")
+
+# Lesson 2: Variables and Data Types
+# Ask the user for their name, age, and favorite color, and store this information in variables.
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))  # Convert input to an integer
+favorite_color = input("Enter your favorite color: ")
+
+# Lesson 3: Input and Output
+# Display the collected information in a nicely formatted message.
+
+print("\nHere's the information you provided:")
+print(f"Name: {name}")
+print(f"Age: {age}")
+print(f"Favorite Color: {favorite_color}")
+
+# Coding Challenge: Modify the program
+# Now, modify the program to calculate and display the user's birth year based on their age.
+
+birth_year = 2023 - age
+print(f"\nBased on your age, your birth year is approximately {birth_year}.")
+
+# Challenge: Improve the program
+# Add error handling to handle invalid age inputs (e.g., non-numeric values).
+
+# Hint: You can use a try-except block to catch potential ValueError exceptions when converting age to an integer.
+try:
+    age = int(input("Enter your age: "))
+    birth_year = 2023 - age
+    print(f"\nBased on your age, your birth year is approximately {birth_year}.")
+except ValueError:
+    print("Invalid age input. Please enter a valid numeric age.")
+
+# Challenge: Personalize the program further by adding more questions or customizing the output messages.
+
+# You can ask additional questions and display the user's input in a creative way.
+
+# Enjoy coding and personalizing your user info program!
+
 
 # Lesson 4: Conditional Statements
 # - Explore if, elif, and else statements for decision-making.
