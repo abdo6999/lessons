@@ -324,43 +324,96 @@ except ValueError:
 
 # Enjoy coding and personalizing your user info program!
 
+# الدرس 4: الدوال والأساليب المدمجة لأنواع البيانات
 
-# Lesson 4: Conditional Statements
+
+# جزء 1: أنواع البيانات العددية
+
+# 1.1 abs()
+# تقوم الدالة abs() بإعادة القيمة المطلقة لرقم. يتم التعامل مع القيمة دون الاهتمام بالعلامة.
+
+num = -5
+absolute_value = abs(num)  # سيكون القيمة المطلقة هي 5
+
+# 1.2 round()
+# تقوم الدالة round() بتقريب رقم إلى الأقرب. يمكن تحديد عدد الأماكن العشرية.
+
+number = 3.14159
+rounded = round(number, 2)  # سيكون الرقم المقرب بـ 2 أماكن عشرية هو 3.14
+
+# 1.3 max() و min()
+# تقوم الدوال max() و min() بإيجاد القيمة الكبرى والصغرى في مجموعة من الأرقام.
+
+numbers = [5, 2, 9, 1, 7]
+maximum = max(numbers)  # سيكون القيمة الكبرى هي 9
+minimum = min(numbers)  # سيكون القيمة الصغرى هي 1
+
+# 1.4 sum()
+# تقوم الدالة sum() بجمع جميع الأرقام في مجموعة.
+
+numbers = [1, 2, 3, 4, 5]
+total = sum(numbers)  # سيكون المجموع هو 15
+
+# 1.5 pow()
+# تقوم الدالة pow() برفع رقم إلى قوة أخرى.
+
+base = 2
+exponent = 3
+result = pow(base, exponent)  # سيكون الناتج هو 2^3 = 8
+
+# 1.6 divmod()
+# تقوم الدالة divmod() بالقسمة وإعادة القسمة والباقي.
+
+quotient, remainder = divmod(10, 3)  # سيكون الناتج: النصفين 3 والباقي 1
+
+# 1.7 int() و float()
+# تقوم الدوال int() و float() بتحويل الأنواع بين الأعداد الصحيحة والأعداد العشرية.
+
+integer_number = int(5.7)  # سيتم تحويل 5.7 إلى 5
+float_number = float(42)   # سيتم تحويل 42 إلى 42.0
+
+# 1.8 complex()
+# تقوم الدالة complex() بإنشاء أعداد مركبة (أعداد خيالية).
+
+complex_number = complex(3, 4)  # سيكون الرقم المركب هو 3 + 4j
+
+
+# Lesson 5: Conditional Statements
 # - Explore if, elif, and else statements for decision-making.
 
-# Lesson 5: Loops
+# Lesson 6: Loops
 # - Learn about for and while loops for repetitive tasks.
 
-# Lesson 6: Lists and Tuples
+# Lesson 7: Lists and Tuples
 # - Understand how to create, access, and modify lists and tuples.
 
-# Lesson 7: Dictionaries and Sets
+# Lesson 8: Dictionaries and Sets
 # - Explore dictionaries and sets for storing key-value pairs and unique values.
 
-# Lesson 8: Functions
+# Lesson 9: Functions
 # - Define and use functions to organize your code.
 
-# Lesson 9: Modules and Libraries
+# Lesson 10: Modules and Libraries
 # - Learn how to import and use external modules and libraries.
 
-# Lesson 10: File Handling
+# Lesson 11: File Handling
 # - Read and write data to files using Python.
 
-# Lesson 11: Exception Handling
+# Lesson 12: Exception Handling
 # - Understand how to handle errors and exceptions gracefully.
 
-# Lesson 12: Object-Oriented Programming (OOP)
+# Lesson 13: Object-Oriented Programming (OOP)
 # - Learn the basics of classes and objects.
 
-# Lesson 13: Advanced Topics (Choose one or more depending on your interests):
+# Lesson 14: Advanced Topics (Choose one or more depending on your interests):
 #   - Regular Expressions
 #   - Working with APIs
 #   - Web Scraping
 #   - Data Analysis with Pandas
 #   - GUI Development (e.g., Tkinter)
 
-# Lesson 14: Final Projects
+# Lesson 15: Final Projects
 # - Apply your knowledge to create small projects or scripts.
 
-# Lesson 15: Additional Resources and Practice
+# Lesson 16: Additional Resources and Practice
 # - Explore online tutorials, exercises, and coding challenges to further improve your skills.
